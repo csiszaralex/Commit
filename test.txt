@@ -33,5 +33,6 @@ alien
 rocket
 hammer
 reqind
-bookmarkegg
+bookmark
+egg
 label
