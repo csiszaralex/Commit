@@ -20,8 +20,8 @@ git add .
 git commit -m "%commit%"
 git push
 echo %commit%
-TIMEOUT 5
-if NOT %count%==75 run.bat
+TIMEOUT 30
+if NOT %count%==100 run.bat
 Exit
 
 :SetRand
