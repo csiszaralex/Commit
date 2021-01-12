@@ -14,7 +14,7 @@ ECHO a >> a.txt
 git add .
 set "commit=:%randline%: Test"
 @REM echo %commit%
-git commit -m "%commit"
+git commit -m "%commit%"
 Exit
 
 :SetRand
