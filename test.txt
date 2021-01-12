@@ -32,7 +32,7 @@ mag
 alien
 rocket
 hammer
-reqind
+rewind
 bookmark
 egg
 label
