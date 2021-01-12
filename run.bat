@@ -15,13 +15,14 @@ For /F "Tokens=1* Delims=:" %%a In ('FindStr/N "^" "a.txt"') Do (
 
 
 ECHO a >> a.txt
-git add .
 set "commit=:%randline%: %count%. commit"
+git add .
 git commit -m "%commit%"
 git push
 echo %commit%
-TIMEOUT 5
-if NOT %count%==50 run.bat
+@REM TIMEOUT 5
+SLEEP 5
+if NOT %count%==60 run.bat
 Exit
 
 :SetRand
