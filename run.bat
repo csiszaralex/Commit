@@ -7,14 +7,19 @@
 Set "proxlist=test.txt"
 
 call :getFile
-
 Call :SetRand
+
+For /F "Tokens=1* Delims=:" %%a In ('FindStr/N "^" "a.txt"') Do (
+    Set "count=%%a"
+)
+
 
 ECHO a >> a.txt
 git add .
-set "commit=:%randline%: Test"
-@REM echo %commit%
+set "commit=:%randline%: %count%. commit"
 git commit -m "%commit%"
+git push
+echo %commit%
 Exit
 
 :SetRand
