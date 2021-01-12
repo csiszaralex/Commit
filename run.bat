@@ -21,7 +21,7 @@ git commit -m "%commit%"
 git push
 echo %commit%
 TIMEOUT 5
-if NOT %count%==60 run.bat
+if NOT %count%==65 run.bat
 Exit
 
 :SetRand
