@@ -20,8 +20,7 @@ git add .
 git commit -m "%commit%"
 git push
 echo %commit%
-@REM TIMEOUT 5
-SLEEP 5
+TIMEOUT 5
 if NOT %count%==60 run.bat
 Exit
 
