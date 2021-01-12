@@ -20,7 +20,8 @@ set "commit=:%randline%: %count%. commit"
 git commit -m "%commit%"
 git push
 echo %commit%
-if NOT %count%==40 run.bat
+TIMEOUT 5
+if NOT %count%==50 run.bat
 Exit
 
 :SetRand
