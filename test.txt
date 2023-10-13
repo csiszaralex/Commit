@@ -36,3 +36,4 @@ rewind
 bookmark
 egg
 label
+fire
